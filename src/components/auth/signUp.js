@@ -4,15 +4,16 @@ import gql from "graphql-tag";
 
 import { Box, Title, Input, Button, Link } from "../commons/style";
 
-function Auth(props) {
+function NewUser(props) {
   return (
     <Box>
       <form autoComplete={"false"}>
-        <Title>Login</Title>
+        <Title>Registre-se</Title>
         <Input type="text" placeholder={"Usuario"} autoComplete={"false"} />
+        <Input type="text" placeholder={"Email"} autoComplete={"false"} />
         <Input type="password" placeholder={"Senha"} />
-        <Button>Login</Button>
-        <Link href={"/sign-up"}>Criar Usuario</Link>
+        <Button>Registrar-se</Button>
+        <Button>Cancelar</Button>
       </form>
     </Box>
   );
@@ -28,4 +29,4 @@ const UserQuery = gql`
   }
 `;
 
-export default graphql(UserQuery, { name: "Users" })(Auth);
+export default graphql(UserQuery, { name: "Users" })(NewUser);

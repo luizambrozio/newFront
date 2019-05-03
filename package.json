@@ -8,9 +8,11 @@
     "apollo-link-http": "^1.5.14",
     "graphql": "^14.2.1",
     "graphql-tag": "^2.10.1",
+    "office-ui-fabric-react": "^6.176.0",
     "react": "^16.8.6",
     "react-apollo": "^2.5.5",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.0",
     "styled-components": "^4.2.0"
   },
